@@ -1,0 +1,323 @@
+/**	----------------**/
+/**					**/
+/**		 GENERAL	**/
+/**					**/
+/**	----------------**/
+
+
+
+body{
+font-family: Roboto, sans-serif;
+font-size:18px;
+font-weight:300;
+letter-spacing:0.5px;
+margin:0px;
+}
+
+#bodywrapper{
+
+}
+
+#insurancewrapper{
+float:left;
+display:inline-block;
+width:50%;
+}
+
+
+#slideshow {
+z-index:-10000;
+    position:relative;
+    width:100vw;
+    padding-top:100px;
+}
+#slideshow .slide img{
+z-index:-10000;
+width:100vw;
+}
+
+.slide{
+position:absolute;
+}
+
+.TextHeader{
+margin:18px;
+}
+
+.CategorizedText{
+display:none;
+}
+
+.CategoryText{
+margin:25px;
+font-size:13px;
+}
+
+.FAQinfo{
+margin-top:10px;
+line-height:20px;
+margin-bottom:20px;
+}
+
+a{
+color:white;
+text-decoration:none;
+}
+
+
+
+/**	----------------**/
+/**					**/
+/**		 HEADER		**/
+/**					**/
+/**	----------------**/
+
+
+
+#Header{
+position:fixed;
+background-color:#3a5cac;
+color:white;
+padding-top:25px;
+padding-bottom:25px;
+}
+
+#CompanyInfoHeader{
+position:relative;
+width:40vw;
+display:inline-block;
+float:left;
+}
+
+#CompanyTitle{
+position:relative;
+font-family: Lora, serif;
+font-weight:300;
+font-size: 1em;
+border-right: 1px dashed white;
+margin-left:10vw;
+padding-top:10px;
+padding-right:0px;
+height:90px;
+}
+
+
+/**	----------------**/
+/**					**/
+/**		NAVIGATION	**/
+/**					**/
+/**	----------------**/
+
+
+#Navigation{
+float:left;
+width:60vw;
+padding-top:15px;
+}
+
+#NavLinkWrapper{
+padding-left:50px;
+}
+
+.NavigationLink{
+float:left;
+font-size:1.2vw;
+text-align:center;
+color:#799df2;
+display:inline-block;
+width:5vw;
+padding:20px;
+  transition-property: color, color;
+  transition-duration: .2s;
+  transition-timing-function: ease-out;
+
+}
+
+.NavigationLink:hover{
+text-decoration:underline;
+color:white;
+ transition-property: color, color;
+  transition-duration: .2s;
+  transition-timing-function: ease-out;
+}
+
+
+
+
+/**	----------------**/
+/**					**/
+/**		MAIN BODY	**/
+/**					**/
+/**	----------------**/
+
+
+#BodyContent{
+margin-top:130vh;
+position:absolute;
+z-index:-100;
+width:60vw;
+margin-left:20vw;
+display:inline-block;
+margin-bottom:200px;
+}
+
+#BodyContentInsurance{
+width:25%;
+float:left;
+margin-left:50px;
+display:inline-block;
+}
+
+#BodyContentInsurance1{
+width:25%;
+float:left;
+margin-left:50px;
+display:inline-block;
+}
+
+p.generaltext{
+font-size:15px;
+}
+
+p.textheader{
+font-size:25px;
+}
+.sectiontext{
+padding:50px;
+}
+img.insurancebutton{
+margin:8px;
+}
+
+img.bgimg{
+margin-top:70px;
+width:100vw;
+}
+
+.chartwrapper{
+width:60vw;
+height:auto;
+}
+
+.chart{
+width:25vw;
+height:180px;
+margin-left:2.5vw;
+margin-right:2.5vw;
+float:left;
+border-bottom: 1px dashed;
+}
+
+p.chartheader{
+font-size:20px;
+color:#3a5cac;
+margin-bottom:0px;
+height:50px;
+}
+
+.charttext{
+margin-bottom:30px;
+height:85px;
+overflow:scroll;
+}
+
+ul.chartlist{
+font-size:13px;
+color:black;
+}
+
+
+/**	----------------**/
+/**					**/
+/**		  IPAD		**/
+/**					**/
+/**	----------------**/
+
+
+
+@media only screen 
+and (min-width : 580px) 
+and (max-width : 778px)
+
+{
+
+#CompanyInfoHeader{
+width:100vw;
+}
+
+.NavigationButton{
+width:150px;
+font-size:2.5vw;
+white-space:nowrap;
+}
+
+#MainBody{
+margin-top:375px;
+}
+
+#slideshow-container{
+display:none;
+}
+
+
+}
+
+
+
+/**	----------------**/
+/**					**/
+/**		MOBILE		**/
+/**					**/
+/**	----------------**/
+
+
+
+@media only screen 
+and (min-width : 0px) 
+and (max-width : 580px)
+
+{
+
+#Header{
+position:relative;
+}
+
+#Navigation{
+position:relative;
+margin:0px;
+}
+
+#CompanyInfoHeader{
+width:100vw;
+}
+
+.NavigationButton{
+width:auto;
+padding-top:5px;
+padding-bottom:5px;
+font-size:.5em;
+white-space:nowrap;
+}
+
+#slideshow-container{
+display:none;
+}
+
+#ProfilePicture{
+display:none;
+}
+
+#MainBody{
+margin-top:0px;
+width:80%;
+}
+
+#BodyContent{
+width:100%;
+margin:0px;
+}
+
+#BodyContentInsurance{
+width:100%;
+margin:0px;
+}
