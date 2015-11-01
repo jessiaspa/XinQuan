@@ -27,13 +27,17 @@ width:50%;
 
 #slideshow {
 z-index:-10000;
-    position:relative;
-    width:100vw;
-    padding-top:100px;
+ position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  clip: rect(auto, auto, auto, auto); 
 }
 #slideshow .slide img{
 z-index:-10000;
-width:100vw;
+    width:100vw;
+
 }
 
 .slide{
@@ -96,8 +100,8 @@ font-weight:300;
 font-size: 1em;
 border-right: 1px dashed white;
 margin-left:10vw;
+padding-right:5vw;
 padding-top:10px;
-padding-right:0px;
 height:90px;
 }
 
@@ -126,7 +130,7 @@ text-align:center;
 color:#799df2;
 display:inline-block;
 width:5vw;
-padding:20px;
+padding:2vw;
   transition-property: color, color;
   transition-duration: .2s;
   transition-timing-function: ease-out;
@@ -152,7 +156,7 @@ color:white;
 
 
 #BodyContent{
-margin-top:130vh;
+margin-top:100vh;
 position:absolute;
 z-index:-100;
 width:60vw;
@@ -201,7 +205,6 @@ height:auto;
 
 .chart{
 width:25vw;
-height:180px;
 margin-left:2.5vw;
 margin-right:2.5vw;
 float:left;
@@ -212,13 +215,11 @@ p.chartheader{
 font-size:20px;
 color:#3a5cac;
 margin-bottom:0px;
-height:50px;
 }
 
 .charttext{
 margin-bottom:30px;
-height:85px;
-overflow:scroll;
+
 }
 
 ul.chartlist{
@@ -237,12 +238,21 @@ color:black;
 
 @media only screen 
 and (min-width : 580px) 
-and (max-width : 778px)
+and (max-width : 1000px)
 
 {
 
+#Header{
+padding-top:10px;
+padding-bottom:0px;
+}
 #CompanyInfoHeader{
 width:100vw;
+}
+
+#CompanyTitle{
+height:5vh;
+text-align:center;
 }
 
 .NavigationButton{
@@ -251,8 +261,19 @@ font-size:2.5vw;
 white-space:nowrap;
 }
 
-#MainBody{
-margin-top:375px;
+#Navigation{
+width:100vw;
+padding-bottom:0px;
+margin-bottom:0px;
+}
+
+.NavigationLink{
+width:11vw;
+
+}
+
+#BodyContent{
+margin-top:100vh;
 }
 
 #slideshow-container{
@@ -280,11 +301,14 @@ and (max-width : 580px)
 
 #Header{
 position:relative;
+height:45vw;
 }
 
 #Navigation{
+padding-top:0px;
 position:relative;
 margin:0px;
+width:100vw;
 }
 
 #CompanyInfoHeader{
@@ -292,15 +316,27 @@ width:100vw;
 }
 
 .NavigationButton{
-width:auto;
 padding-top:5px;
 padding-bottom:5px;
-font-size:.5em;
 white-space:nowrap;
 }
 
+#NavLinkWrapper{
+padding-left:0px;
+}
+
+.NavigationLink{
+font-size:12px;
+width:25vw;
+}
+
 #slideshow-container{
+
 display:none;
+}
+
+#slideshow{
+top:55vw;
 }
 
 #ProfilePicture{
@@ -313,10 +349,17 @@ width:80%;
 }
 
 #BodyContent{
+margin:0;
+margin-top:40vh;
 width:100%;
-margin:0px;
+}
+.chart{
+width:100vw;
 }
 
+li{
+font-size:14px;
+}
 #BodyContentInsurance{
 width:100%;
 margin:0px;
